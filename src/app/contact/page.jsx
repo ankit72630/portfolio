@@ -74,9 +74,9 @@ const ContactPage = () => {
           <button
             type="submit"
             className="
-              bg-purple-200 rounded 
-              font-semibold text-gray-700 
-              p-3 hover:bg-purple-300 transition
+              bg-black rounded text-white
+              font-semibold  
+              p-3 hover:bg-white hover:text-black transition
             "
           >
             Send
