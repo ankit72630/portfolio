@@ -25,7 +25,7 @@ const AboutPage = () => {
       transition={{ duration: 1 }}
     >
       {/* CONTAINER */}
-      <div className="h-full overflow-scroll lg:flex" ref={containerRef}>
+      <div className="h-[calc(100vh-6rem)] overflow-y-scroll lg:flex" ref={containerRef}>
         {/* TEXT CONTAINER */}
         <div className="p-4 sm:p-8 md:p-12 lg:p-16 xl:p-20 flex flex-col gap-16 md:gap-20 lg:gap-24 xl:gap-28 lg:w-2/3 lg:pr-0 xl:w-1/2">
           {/* BIOGRAPHY CONTAINER */}
@@ -34,8 +34,8 @@ const AboutPage = () => {
             <Image
               src="/profile-pic.jpg"
               alt=""
-              width={112}
-              height={112}
+              width={140}
+              height={140}
               className="w-28 h-28 rounded-full object-cover"
             /> 
             {/* BIOGRAPHY TITLE */}

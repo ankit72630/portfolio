@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -9,17 +9,27 @@ const ContactPage = () => {
 
   return (
     <motion.div
-      className="h-full"
+      className="min-h-screen w-full overflow-x-hidden"
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
-
-        {/* Text Container */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center 
-                        text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
-          <div>
+      <div className="
+        min-h-[calc(100vh-6rem)]
+        w-full 
+        flex flex-col lg:flex-row 
+        px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32
+        gap-8 lg:gap-16
+      ">
+        
+        {/* LEFT TEXT SECTION */}
+        <div className="
+          flex items-center justify-center 
+          w-full lg:w-1/2 
+          text-4xl sm:text-5xl md:text-6xl font-semibold text-gray-800
+          leading-tight
+        ">
+          <div className="flex items-center gap-2 flex-wrap text-center lg:text-left">
             {text.split("").map((letter, index) => (
               <motion.span
                 key={index}
@@ -34,30 +44,41 @@ const ContactPage = () => {
           </div>
         </div>
 
-        {/* Form Container */}
-        <form className="
-            h-1/2 lg:h-full lg:w-1/2
-            bg-red-50 rounded-xl text-base sm:text-lg md:text-xl
-            flex flex-col gap-4 sm:gap-6 md:gap-8
-            p-6 sm:p-10 md:p-16 lg:p-20 xl:p-24
-        ">
+        {/* RIGHT FORM SECTION */}
+        <form
+          className="
+            w-full lg:w-1/2
+            bg-red-50 rounded-xl 
+            text-base sm:text-lg md:text-xl
+            flex flex-col gap-5 sm:gap-6 md:gap-8
+            p-6 sm:p-10 md:p-12 lg:p-14 xl:p-16
+            max-w-[700px] mx-auto
+          "
+        >
           <span>Dear Ankit,</span>
 
           <textarea
             rows={6}
-            className="bg-transparent border-b-2 border-b-black outline-none resize-none w-full"
+            className="bg-transparent border-b-2 border-black outline-none resize-none w-full"
           />
 
           <span>My mail address is:</span>
 
           <input
             type="text"
-            className="bg-transparent border-b-2 border-b-black outline-none w-full"
+            className="bg-transparent border-b-2 border-black outline-none w-full"
           />
 
           <span>Regards</span>
 
-          <button className="bg-purple-200 rounded font-semibold text-gray-600 p-3">
+          <button
+            type="submit"
+            className="
+              bg-purple-200 rounded 
+              font-semibold text-gray-700 
+              p-3 hover:bg-purple-300 transition
+            "
+          >
             Send
           </button>
 
@@ -73,6 +94,7 @@ const ContactPage = () => {
             </span>
           )}
         </form>
+
       </div>
     </motion.div>
   );
