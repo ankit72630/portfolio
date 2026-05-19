@@ -167,42 +167,46 @@ const portfolioSections = [
   },
 
   {
-    section: "AI Innovation & Concept Systems",
-    description:
-      "Experimental AI products, advanced UI concepts, and next-generation workflow systems.",
+    section: "AI Innovation & Intelligent Automation Systems",
+     description:
+    "Advanced AI-powered workflow platforms, intelligent document processing systems, and next-generation enterprise automation concepts across healthcare, life sciences, and enterprise AI domains.",
     projects: [
       {
-        title: "Smart PMO Copilot (AI Dashboard)",
-        subtitle:
-          "AI Product Concept",
+         title: "AI Document Intelligence Platform",
+         subtitle:
+        "Life Sciences • Healthcare • Regulatory AI",
         description:
-          "An AI-assisted PMO dashboard that analyzes project tasks, generates summaries, visualizes KPIs, predicts risks, and provides executive insights using modern dashboarding techniques.",
-        impact:
-          "Conceptual AI PMO workflow assistant for project intelligence.",
-        tech: [
-          "React.js",
-          "OpenAI",
-          "Analytics UI",
-          "Tailwind CSS",
-        ],
-        image: "/work/PMO.png",
+        "Built an AI-powered document intelligence platform for life sciences and healthcare workflows, enabling automated extraction, proofreading, validation, and structured processing of complex scientific and regulatory documents using NLP and intelligent automation.",
+      impact:
+        "Reduced manual document review effort by 70% and improved regulatory processing accuracy across scientific workflows.",
+      tech: [
+        "React.js",
+        "FastAPI",
+        "NLP",
+        "OpenAI",
+        "OCR",
+        "Healthcare AI",
+      ],
+        image: "/work/Proofreading.png",
       },
 
       {
-        title: "AI Job Marketplace Platform",
-        subtitle:
-          "UI/UX Product Concept",
-        description:
-          "Modern job marketplace concept featuring intelligent job recommendations, advanced filtering systems, responsive UI architecture, and AI-ready workflows.",
-        impact:
-          "Demonstrates scalable frontend architecture and modern UI engineering.",
-        tech: [
-          "React.js",
-          "Tailwind CSS",
-          "Responsive UI",
-          "UI/UX",
-        ],
-        image: "/work/JobPortal.png",
+         title: "AI Board Deck Intelligence Platform",
+         subtitle:
+        "Venture Capital • Portfolio Intelligence • Multi-Agent AI",
+      description:
+        "Built an AI-powered board deck intelligence platform that extracts, validates, analyzes, and summarizes critical financial and operational insights from investor updates, portfolio reports, and board presentations using a multi-agent AI workflow architecture.",
+      impact:
+        "Reduced manual board deck analysis effort by 80% and accelerated executive decision-making through AI-generated insights, anomaly detection, and automated scoring.",
+      tech: [
+        "React.js",
+        "FastAPI",
+        "OpenAI",
+        "Multi-Agent AI",
+        "Document AI",
+        "Vector DB",
+      ],
+        image: "/work/Board.png",
       },
     ],
   },
