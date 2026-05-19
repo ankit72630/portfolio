@@ -349,7 +349,7 @@ const PortfolioPage = () => {
               </a>
 
               <a
-                href="/Ankit_Kumar_Resume.pdf"
+                href="/Ankit_Kumar_Freelance_Resume.pdf"
                 target="_blank"
                 className="px-8 py-4 border border-white rounded-2xl font-semibold hover:bg-white hover:text-black transition-all"
               >

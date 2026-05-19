@@ -65,7 +65,7 @@ const Homepage = () => {
               </button>
             </Link>
             <a
-              href="/Ankit_FullStack_9years_Resume.docx"
+              href="/Ankit_Kumar_Freelance_Resume.pdf"
               download
               className="p-4 rounded-lg ring-1 ring-black bg-white text-black text-center hover:bg-black hover:text-white transition"
             >
